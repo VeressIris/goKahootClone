@@ -1,0 +1,23 @@
+[
+  {
+    "title": "What is the year?",
+    "answers": [
+      {
+        "text": "2024",
+        "isCorrect": true
+      },
+      {
+        "text": "2020",
+        "isCorrect": false
+      },
+      {
+        "text": "2022",
+        "isCorrect": false
+      },
+      {
+        "text": "2023",
+        "isCorrect": false
+      }
+    ]
+  }
+]
