@@ -15,7 +15,22 @@
     }
   }
 
+  function connectWebSocket() {
+    const ws = new WebSocket("ws://127.0.0.1:3000/ws");
+    ws.onopen = () => {
+      console.log("Websocket connection opened");
+      ws.send("Hello from the client!");
+    };
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      console.log(data);
+    };
+  }
+
   fetchQuestions();
+
+  connectWebSocket();
 </script>
 
 <div>
